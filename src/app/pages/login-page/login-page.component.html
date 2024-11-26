@@ -1,0 +1,25 @@
+<form 
+ class="login-form" 
+[formGroup] = "form"
+(ngSubmit)="onSubmit($event)"
+> 
+    <h1 class="h1 mb60">Login</h1> 
+
+    <label class="tt-control-label mb16">
+        Username
+        <input 
+        formControlName="username"
+        type="text"  class ="tt-input" placeholder="username">
+    </label>
+
+    <label class="tt-control-label mb32">
+        Password 
+        <input
+        formControlName="password"
+        type = "password"  class ="tt-input" placeholder="password"> 
+    </label>
+    <button class="btn btn-shadow" type="submit"> 
+        Login
+    </button>
+</form>
+<img src = "assets/svg/logo-big.svg" alt="logo">
